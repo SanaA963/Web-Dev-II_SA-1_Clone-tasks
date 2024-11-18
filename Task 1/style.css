@@ -1,0 +1,248 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  }
+  body{
+  padding: 0 200px;
+  background-color: #e9e9e9;
+  font-family: 'Josefin San', sans-serif;
+  }
+  
+header {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-direction: column; /* Stack logo and nav vertically */
+  padding: 20px; /* Add spacing around the header */
+}
+
+/* Logo styling */
+.logo img {
+  width: 200px; /* Set fixed size */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px; /* Add spacing below the logo */
+}
+
+/* Navigation styling */
+nav ul {
+  list-style: none; /* Remove bullets */
+  padding: 0;
+  display: flex; /* Arrange links horizontally */
+  gap: 20px; /* Add space between links */
+}
+
+/* Link styling */
+nav ul a {
+  margin: 0 130px;
+  text-decoration: none; /* Remove underline */
+  color: black; /* Set text color */
+  font-size: 16px; /* Adjust font size */
+}
+
+h1, h2, h3, h4, h5, h6
+{
+font-family: 'Protest Guerrilla', sans-serif;
+}
+  main{
+      background-color: #ffffff;
+  }
+  .start{
+  padding: 50px 50px 0 50px;
+  }
+  h1{ 
+      font-size: 80px;
+  }
+  h2{
+  font-size: 33.33px;
+  }
+  p{
+      font-family: "Josefin Sans", sans-serif;;
+      font-size: 20px;
+      padding: 10px;
+  }
+  /* Middle Paragraph */
+  .para{
+  padding: 10px 50px 50px 50px;
+  column-count: 3;
+  column-gap: 10px;
+  }
+
+  .h2{
+   font-size: 30px;
+  }
+  .para h2{
+  margin-bottom: 10px;
+  break-after: avoid;
+  }
+  .para p{
+      line-height: 1.7;
+      font-size: 15px;
+     font-family: "Josefin Sans", sans-serif;;
+  }
+
+  .flex-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    grid-template-rows: repeat(2, 1fr); /* Two equal rows */
+  }
+  
+  .item {
+    position: relative;
+  }
+  
+  .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Make the large image span two rows and two columns */
+  .item.large {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  
+  /* Other items adjust automatically within the grid */
+  .item.small {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  
+  .item.medium {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .Author {
+    display: flex; /* Arrange children side by side */
+    align-items: center; /* Align content vertically */
+    justify-content: space-between; /* Add space between text and image */
+    gap: 20px; /* Space between text and image */
+    padding: 20px; /* Add padding around the section */
+    border-radius: 8px; /* Optional: Rounded corners */
+    max-width: 900px; /* Limit the overall width of the section */
+    margin: 20px auto; /* Center the section horizontally */
+  }
+  
+  .Author img {
+    border-radius: 50%; /* Circular image */
+    object-fit: cover; /* Ensure the image fits within the circular shape */
+    height: 180px; /* Set desired height */
+    width: 180px; /* Set desired width */
+    }
+  
+ 
+  #Author h2 {
+    text-align: center;
+    font-size: 48px; /* Adjust font size for the title */
+    margin-bottom: 10px;
+   
+  }
+  
+  #Author p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px; /* Adjust font size for readability */
+    text-align: left; /* Keep text aligned to the left */
+    margin: 0;
+  }
+  
+
+  /* --footer-- */
+footer{
+  background-color: #141414;
+  color: #e9e9e9;
+  padding: 50px 0 50px 0;
+  text-align: center;
+  }
+/*small mobile*/
+/* Media query for small phone viewports (360px to 540px) */
+@media (max-width: 540px) {
+  body {
+    padding: 0 12px; /* Standard spacing */
+    background-color: #f8f8f8; /* Optional: lighter background for small screens */
+  }
+
+  header {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column; 
+    padding: 20px; 
+  }
+
+  .logo img {
+    width: 150px; /*logo size */
+  }
+
+  nav ul {
+    text-align: flex; /* Stack links horizontal */
+    gap: 12px; /* Add smaller spacing */
+  }
+
+  nav ul a {
+    font-size: 14px; /* Adjust font size for mobile */
+    margin: 0; 
+  }
+
+  h1 {
+    font-size: 40px; /* Reduce heading size */
+    text-align: center; /* alignment for small screens */
+  }
+
+  h2 {
+    font-size: 24px; /* subheading size */
+    text-align: center;
+  }
+
+  p {
+    font-size: 16px; /* paragraph text */
+    line-height: 1.5; /* for reducing line spacing */
+  }
+
+  .para {
+    column-count: 1; /* Display one column for small screens */
+    column-gap: 0; /* Remove column gaps */
+  }
+
+  .flex-container {
+    grid-template-columns: repeat(1, 1fr); /* Two columns for images */
+    grid-template-rows: auto; /* Adjust row height automatically */
+    gap: 12px; /* Add standard spacing between items */
+  }
+
+  .item.large {
+    grid-column: span 2; /* Keep large image spanning two columns */
+    grid-row: auto;
+  }
+
+  .item img {
+    object-fit: contain; /* Ensure images fit without cropping */
+  }
+
+  .Author {
+    flex-direction: column; /* Stack text and image vertically */
+    text-align: center; /* Center-align text */
+    padding: 12px; /* Standard spacing */
+    gap: 12px; /* Adjust gap between text and image */
+  }
+
+  .Author img {
+    height: 120px; /* Reduce author image size */
+    width: 120px;
+  }
+
+  #Author h2 {
+    font-size: 28px; /* Adjust author heading size */
+  }
+
+  #Author p {
+    font-size: 14px; /* Smaller text size */
+  }
+
+  footer {
+    padding: 20px 12px; /* Adjust footer spacing */
+    font-size: 12px; /* Reduce footer text size */
+  }
+}
+
+ 
