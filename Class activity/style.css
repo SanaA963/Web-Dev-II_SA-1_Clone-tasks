@@ -1,0 +1,36 @@
+/* Center body */
+body {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    margin: 0; 
+    background-color: white; 
+}
+
+/* Grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr); 
+    gap: 0px; 
+    width: 500px; 
+    height: 500px; 
+    border: 2px solid black; 
+    background-color: white; 
+}
+
+/* pictures stylling*/
+.grid {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    border: 1px solid black; 
+    overflow: hidden; 
+}
+
+.grid img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
