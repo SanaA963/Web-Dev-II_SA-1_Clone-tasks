@@ -1,20 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 2</title>
-    <!--font for teko-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Teko:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <!--font for lato-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Protest+Guerrilla&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>watch.it</title>
+  <!-- Applying Google Fonts for Lato and Teko -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Teko:wght@400;700&display=swap" rel="stylesheet">
+  <!-- CSS File -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+  <!-- Header -->
+  <header>
+    <div class="logo">watch.it</div>
+    <nav>
+      <ul>
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Comedy</a></li>
+        <li><a href="#">Romance</a></li>
+        <li><a href="#">Drama</a></li>
+      </ul>
+    </nav>
+    <button class="search-button">SEARCH</button>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="movie-card">
+      <img src="picture/who-framed-roger-rabbit.jpg" alt="Who Framed Roger Rabbit" class="movie-poster">
+      <div class="movie-info">
+        <p>
+          Who Framed Roger Rabbit (1988)
+          <br>
+          In a world where cartoons and humans coexist, a detective must solve<br> a zany, high-stakes mystery. Packed with wild humor, groundbreaking<br> animation, and noir twists, this unique film will pull you into a world <br>where anything is possible!
+        </p>
+        <!-- First Movie Button -->
+         <button class="watch-button-first">WATCH <br> NOW</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second Movie Section -->
+  <div class="contain">
+    <div class="movies-card">
+      <img src="picture/hook.jpg" alt="Hook Movie" class="movies-poster">
+      <div class="movies-info">
+        <p>
+          Hook (1991)
+          <br>
+          An adult Peter Pan must return to Neverland to save his children from Captain Hook. A magical journey filled with nostalgia, adventure, and lessons about family and imagination.
+        </p>
+        <button class="watch-button-second">WATCH NOW</button>
+      </div>
+    </div>
+  </div>
+
+  <!---->
+  
 </body>
 </html>
