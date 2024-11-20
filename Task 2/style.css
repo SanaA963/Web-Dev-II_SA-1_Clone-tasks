@@ -54,11 +54,11 @@ header nav ul li a {
 header .search-button {
     font-family: 'Teko', sans-serif; /* Use Teko */
     font-size: 2em;
-    padding: 2px 3px;
+    padding: 2px 16px;
     background-color: #070410;
     color: #EEF36A;
     border: 3px solid #EEF36A; /* Adds a visible white border */
-    border-radius: 6px;
+    border-radius: 16px;
     cursor: pointer;
   }
   
@@ -107,7 +107,7 @@ header .search-button {
     background-color: #231651;
     color: #ffffff;
     border: 3px solid #ffffff;
-    border-radius: 6px;
+    border-radius: 16px;
     padding: 10px 20px;
     font-size: 2em;
     font-weight: bold;
@@ -159,7 +159,7 @@ header .search-button {
     background-color: #4D4DFF; /* Different background color */
     color: #ffffff;
     border: 3px solid #ffffff;
-    border-radius: 6px;
+    border-radius: 16px;
     padding: 10px 90px;
     padding-bottom: 6px;
     font-size: 2em;
@@ -168,5 +168,55 @@ header .search-button {
   }
   
   /* */
+  .cont {
+    margin: 100px;
+    margin-left: 800px;
+    margin-top: -930px;
+    max-width: 400px;
+    overflow: hidden;
+    box-shadow: 10px 10px #EEF36A;
+  }
   
+  .movie-cards {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 10px #EEF36A 
+  }
   
+  .movie-posters {
+    width: 100%;
+    height: 450px;
+  }
+  
+  .movie-infos {
+    background-color: #4DCCBD; 
+    padding: 20px;
+    text-align: center;
+    height: 345px;
+    width: auto;
+  }
+  
+
+  .movie-infos p {
+    font-family: 'Lato',sans-serif;
+    font-size: 1.5em;
+    text-align: left;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+   /* Styles for the second movie button */
+.watch-button-third {
+    position: relative;
+    font-family: 'Teko', sans-serif;
+    background-color: #4D4DFF; /* Different background color */
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    border-radius: 6px;
+    padding: 10px 90px;
+    padding-bottom: 6px;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+  }
