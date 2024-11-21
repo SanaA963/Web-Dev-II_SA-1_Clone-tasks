@@ -94,7 +94,7 @@ header .search-button {
     font-family: 'Lato',sans-serif;
     font-size: 1.5em;
     text-align: left;
-    color: #333;
+    color: #070410;
     margin-bottom: 20px;
     line-height: 1.5;
   }
@@ -147,7 +147,7 @@ header .search-button {
     font-family: 'Lato',sans-serif;
     font-size: 1.5em;
     text-align: left;
-    color: #333;
+    color: #070410;
     margin-bottom: 20px;
     line-height: 1.5;
   }
@@ -198,10 +198,11 @@ header .search-button {
   
 
   .movie-infos p {
+    margin: 5px;
     font-family: 'Lato',sans-serif;
     font-size: 1.5em;
     text-align: left;
-    color: #333;
+    color: #070410;
     margin-bottom: 20px;
     line-height: 1.5;
   }
@@ -213,10 +214,129 @@ header .search-button {
     background-color: #4D4DFF; /* Different background color */
     color: #ffffff;
     border: 3px solid #ffffff;
-    border-radius: 6px;
+    border-radius: 16px;
+    margin-top: -17px;
     padding: 10px 90px;
     padding-bottom: 6px;
     font-size: 2em;
     font-weight: bold;
     cursor: pointer;
   }
+  /* */
+  .contai {
+    max-width: 900px;
+  margin: 100px auto; /* Center the container */
+  margin-bottom: 50px; /* Space below for separation */
+  box-shadow: 10px 10px #EEF36A;
+  display: flex;
+  }
+  
+  .poster-card {
+    /* display: flex; */
+    flex-direction: column;
+    box-shadow: 10px 10px #EEF36A 
+  }
+  
+  .movies-posters {
+    width: 450px;
+    height: 455px;
+  }
+  
+  .poster-infos {
+    background-color: #4DCCBD; 
+    padding: 20px;
+    text-align: center;
+    color: #070410;
+    height: 420px;
+    width: auto;
+  }
+  
+
+  .poster-infos p {
+    margin: -16px;
+    margin-top: -20px;
+    padding: 0px;
+    font-family: 'Lato',sans-serif;
+    font-size: 1.5em;
+    text-align: left;
+    width: 445px;
+    
+  }
+  
+   /* Styles for the second movie button */
+.watch-button-4 {
+    position: relative;
+    font-family: 'Teko', sans-serif;
+    background-color: #4D4DFF; /* Different background color */
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    border-radius: 16px;
+    margin: 5px;
+    margin-top: 100px;
+    padding: 10px 100px;
+    padding-bottom: 6px;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+/* */
+
+.movie-container {
+  max-width: 900px;
+  margin: 100px;
+  margin-left: -905px;
+  margin-top: 540px;
+  /* overflow: hidden; */
+  box-shadow: 10px 10px #EEF36A;
+  display: flex;
+}
+
+.image-card {
+  /* display: flex; */
+  flex-direction: column;
+  box-shadow: 10px 10px #EEF36A ;
+}
+
+.image-poster {
+  width: 450px;
+  height: 455px;
+}
+
+.movie-inform {
+  background-color: #4DCCBD; 
+  padding: 20px;
+  text-align: center;
+  color: #070410;
+  height: 420px;
+  width: auto;
+}
+
+
+.movie-inform p {
+  margin: -16px;
+  margin-top: -20px;
+  padding: 0px;
+  font-family: 'Lato',sans-serif;
+  font-size: 1.5em;
+  text-align: left;
+  width: 445px;
+  
+}
+
+ /* Styles for the second movie button */
+.watch-button-5 {
+  position: relative;
+  font-family: 'Teko', sans-serif;
+  background-color: #4D4DFF; /* Different background color */
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  border-radius: 16px;
+  margin: 5px;
+  margin-top: 100px;
+  padding: 10px 100px;
+  padding-bottom: 6px;
+  font-size: 2em;
+  font-weight: bold;
+  cursor: pointer;
+}
